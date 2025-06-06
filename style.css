@@ -304,6 +304,12 @@ p{
   .history-panel {
     width: 300px;
   }
+
+    p{
+    font-size: 18px;
+    display: inline;
+    color: #b57412;
+  }
 }
 
 
