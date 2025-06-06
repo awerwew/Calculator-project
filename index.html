@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a2ac854b90.js" crossorigin="anonymous"></script>    
+</head>
+<body> 
+<div class="cal-container">
+        <div class="calculator">
+            <div class="calculator-bg"></div>
+            
+            <!-- Display -->
+            <div class="textbox">
+                <div class="display-text" id="expression"></div>
+                <div class="display-result" id="result"></div>
+            </div>
+            
+            <!-- Number Buttons -->
+            <section id="input">
+                <button class="btn-number btn-1" data-action="number" data-value="1">1</button>
+                <button class="btn-number btn-2" data-action="number" data-value="2">2</button>
+                <button class="btn-number btn-3" data-action="number" data-value="3">3</button>
+                <button class="btn-number btn-4" data-action="number" data-value="4">4</button>
+                <button class="btn-number btn-5" data-action="number" data-value="5">5</button>
+                <button class="btn-number btn-6" data-action="number" data-value="6">6</button>
+                <button class="btn-number btn-7" data-action="number" data-value="7">7</button>
+                <button class="btn-number btn-8" data-action="number" data-value="8">8</button>
+                <button class="btn-number btn-9" data-action="number" data-value="9">9</button>
+                <button class="btn-number btn-0" data-action="number" data-value="0">0</button>
+                <button class="btn-number btn-decimal" data-action="decimal" data-value=".">.</button>
+                <button class="btn-number btn-del" data-action="backspace">&#9003;</button>
+                
+                <!-- Operator Buttons -->
+                <button class="btn-operator btn-divide" data-action="division" data-value="/">÷</button>
+                <button class="btn-operator btn-multiply" data-action="multiplication" data-value="*">×</button>
+                <button class="btn-operator btn-add" data-action="addition" data-value="+">+</button>
+                <button class="btn-operator btn-subtract" data-action="subtraction" data-value="-">-</button>
+                <button class="btn-operator btn-clear" data-action="clear">C</button>
+                <button class="btn-operator btn-percent" data-action="mod" data-value="%">%</button>
+                
+                <!-- Equals Button -->
+                <button class="btn-equals" data-action="submit" data-value="=">＝</button>
+            </section>
+        </div>
+    </div>
+            <!-- History Section -->
+    <div class="calculator-history-container">
+        <div class="history-panel">
+            <div class="history-header">
+                <h3>History</h3>
+                <button class="btn-clear-history" data-action="clear-history">
+                    <i class="fas fa-trash-alt"></i>
+                </button>
+            </div>
+            <div class="history-items" id="history-items">
+                <!-- History items will be added here dynamically -->
+            </div>
+        </div>  
+</div>
+<div class="animate-container"> 
+    <p class="animate">Accessment for first semester examination</p></div>
+<script src="script.js" defer></script>
+</body>
+</html>
